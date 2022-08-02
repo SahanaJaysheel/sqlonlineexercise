@@ -1,0 +1,25 @@
+Think about your favorite apps, and pick one that stores your data- like a game that stores scores, an app that lets you post updates, etc. Now in this project, you're going to imagine that the app stores your data in a SQL database (which is pretty likely!), and write SQL statements that might look like their own SQL.
+
+CREATE a table to store the data.
+INSERT a few example rows in the table.
+Use an UPDATE to emulate what happens when you edit data in the app.
+Use a DELETE to emulate what happens when you delete data in the app.
+Your project is now marked as complete. You can continue working on it, of course, if you think of other ways to improve it. Keep practicing!
+
+=>
+/* What does the app's SQL look like? */
+CREATE table game (name text,age integer,email text,phonenumber INTEGER);
+
+INSERT into game values("nayana",24,"nayan@land.com",0123456700);
+INSERT into game values("suga",20,"sugar@kworld.com",0123456119);
+INSERT into game values("virat",26,"virat@fab.com",0127756789);
+INSERT into game values("miniso",25,"min@gmail.com",0123456559);
+
+SELECT * from game;
+
+update game SET name = "sahan" where age=24;
+select * from game;
+ 
+delete from game where name = "virat";
+SELECT * from game;
+
